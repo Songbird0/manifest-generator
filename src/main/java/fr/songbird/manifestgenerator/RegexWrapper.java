@@ -27,12 +27,15 @@ public final class RegexWrapper {
 	 * puis compilé par un objet Matcher.
 	 * @param pattern Votre chaîne de caractères.
 	 */
-	public RegexWrapper(final String pattern) 
+	public RegexWrapper(final String pattern, final int flag) 
 	{
 		assert(pattern != null) : "pattern binding is null, abort the mission, chief !";
 		assert(!pattern.isEmpty()) : "pattern string is null, abort the mission, chief !";
 //		Pourquoi utiliser ce wrapper avec une chaîne de caractères vide ?
+		assert(flag > 0) : "flag value isn't positive, abord the mission, chief !";
 		m_pattern = pattern;
+		m_flag = flag;
 	}
+	
 
 }
