@@ -13,7 +13,7 @@ Autrement, ce projet a vu le jour principalement pour me former à maven et ses 
 
 - [x] Fixer les principales fonctionnalités du générateur.
 - [ ] Gestion du classpath.
-- [ ] Supporter des (meta) données supportées initialement par le format `.MF`. (**Optionnel**, peut être reporté à la prochaine roadmap.)
+- [ ] Support des (meta) données supportées initialement par le format `.MF`. (**Optionnel**, peut être reporté à la prochaine roadmap.)
 - [ ] Création d'un gestionnaire de commandes.
   - [ ] Fixer les constantes du gestionnaire.
     - Racine de la commande: `mg`;
