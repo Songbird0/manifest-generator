@@ -1,14 +1,11 @@
 package fr.songbird.manifestgenerator.test;
 
-import static org.junit.Assert.*;
-
-import java.util.regex.Pattern;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
 import fr.songbird.manifestgenerator.RegexWrapper;
-
-import static org.hamcrest.core.Is.*;
 
 public class RegexWrapperTest {
 
