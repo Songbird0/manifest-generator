@@ -12,11 +12,14 @@ package fr.songbird.manifestgenerator;
  * @see java.util.regex.Matcher Matcher
  * 
  */
-public class RegexWrapper {
+public final class RegexWrapper {
 
 	private final String m_pattern;
+	private final int m_flag;
+	private java.util.regex.Pattern m_regex = null;
+	
 	/**
-	 * La classe RegexWrapper ne possède qu'un seul constructeur muni d'un seul paramètre.
+	 * La classe RegexWrapper ne possède qu'un seul constructeur muni de deux paramètres.
 	 * <p>
 	 * Vous pouvez lui passer en paramètre la chaîne de caractères que vous souhaitez faire compiler à votre automate.
 	 * <p>
