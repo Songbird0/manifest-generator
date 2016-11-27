@@ -1,10 +1,8 @@
 language: java
 
-sudo: true
+sudo: false
 
 script:
-  - apt-get update
-  - apt-get install maven3
+  - echo "## Installation des dépendences qui ne disposent pas de pom.xml."
+  - echo "Maven version:"
   - mvn -v
-  - mvn install:install-file -Dfile=src/main/resources/WyLog_v2.jar -DgroupId=net.wytrem.logging -DartifactId=wylog -Dversion=2.0 -Dpackaging=jar
-  - mvn test
