@@ -13,13 +13,16 @@ Autrement, ce projet a vu le jour principalement pour me former à maven et ses 
 
 - [x] Fixer les principales fonctionnalités du générateur.
 - [ ] Gestion du classpath.
-- [ ] Supporter des (meta) données supportées initialement par le format `.MF`. (**Optionnel**, peut être reporté à la prochaine roadmap.)
+- [ ] Support des (meta) données supportées initialement par le format `.MF`. (**Optionnel**, peut être reporté à la prochaine roadmap.)
 - [ ] Création d'un gestionnaire de commandes.
   - [ ] Fixer les constantes du gestionnaire.
     - Racine de la commande: `mg`;
     - Argument `help`;
+      - Affiche la doc de l'utilitaire.
     - Argument `mfp`;
-    - Argument `jarp`.
+      - Le chemin du manifest. (ou dans lequel il devrait être créé si il n'est pas présent)
+    - Argument `jarp`
+      - Répertoire dans lequel se trouve toutes les dépendances du projet..
 - [ ] Création d'un wrapper pour les commandes
   - [ ] Création d'une enum pour l'introspection des types d'arguments.
     - e.g. Root,
