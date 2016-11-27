@@ -19,13 +19,13 @@ public final class RegexWrapper {
 	/**
 	 * Attribut contenant la chaîne de caractères passée en paramètre.
 	 */
-	private final String m_pattern;
+	private String m_pattern;
 	/**
 	 * Attribut contenant le ou les flags passés en paramètre.
 	 * <p>
 	 * Par défaut, la valeur est nulle. (== 0)
 	 */
-	private final int m_flag;
+	private int m_flag;
 	/**
 	 * Attribut contenant l'instance de la classe Pattern,
 	 * obtenue en compilant la chaîne de caractères.
