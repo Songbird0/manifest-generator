@@ -47,7 +47,7 @@ public final class RegexWrapper {
 		assert(pattern != null) : "pattern binding is null, abort the mission, chief !";
 		assert(!pattern.isEmpty()) : "pattern string is null, abort the mission, chief !";
 //		Pourquoi utiliser ce wrapper avec une chaîne de caractères vide ?
-		assert(flag > 0) : "flag value isn't positive, abord the mission, chief !";
+		assert(flag >= 0) : "flag value isn't positive, abord the mission, chief !";
 		m_pattern = pattern;
 		m_flag = flag;
 	}
