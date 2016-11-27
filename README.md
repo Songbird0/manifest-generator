@@ -2,6 +2,10 @@
 
 ManifestGenerator est un outil qui aide à la rédaction du classpath et ainsi éviter les erreurs.
 
+## Santé du projet
+
+[![Build Status](https://travis-ci.org/Songbird0/manifest-generator.svg?branch=MG_labs)](https://travis-ci.org/Songbird0/manifest-generator)
+
 ## Pourquoi recréer un outil qui existe déjà ?
 
 Pourquoi pas ?
