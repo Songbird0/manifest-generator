@@ -3,6 +3,8 @@
  */
 package fr.songbird.manifestgenerator;
 
+import java.util.regex.Pattern;
+
 /**
  * Wrapper encapsulant les classes Pattern et Matcher.
  * @author songbird
@@ -48,6 +50,11 @@ public final class RegexWrapper {
 		assert(flag > 0) : "flag value isn't positive, abord the mission, chief !";
 		m_pattern = pattern;
 		m_flag = flag;
+	}
+
+	public Pattern get_m_regex() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 
