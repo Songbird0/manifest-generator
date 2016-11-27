@@ -40,21 +40,46 @@ public final class RegexWrapper {
 	 * <p>
 	 * Une fois passé en paramètre, {@code pattern} sera utilisé pour instancier un objet de la classe Pattern, 
 	 * puis compilé par un objet Matcher.
-	 * @param pattern Votre chaîne de caractères.
+	 * @param PATTERN Votre chaîne de caractères.
+	 * @param FLAG La somme des flags assignés à la regex.
 	 */
-	public RegexWrapper(final String pattern, final int flag) 
+	public RegexWrapper(final String PATTERN, final int FLAG) 
 	{
-		assert(pattern != null) : "pattern binding is null, abort the mission, chief !";
-		assert(!pattern.isEmpty()) : "pattern string is null, abort the mission, chief !";
+		assert(PATTERN != null) : "pattern binding is null, abort the mission, chief !";
+		assert(!PATTERN.isEmpty()) : "pattern string is null, abort the mission, chief !";
 //		Pourquoi utiliser ce wrapper avec une chaîne de caractères vide ?
-		assert(flag >= 0) : "flag value isn't positive, abord the mission, chief !";
-		m_pattern = pattern;
-		m_flag = flag;
+		assert(FLAG >= 0) : "flag value isn't positive, abord the mission, chief !";
+		m_pattern = PATTERN;
+		m_flag = FLAG;
+		m_regex = Pattern.compile(m_pattern, m_flag);
 	}
 
+	/**
+	 * Version surchargée du constructeur d'origine qui permet de faire abstraction du flag,
+	 * devant être obligatoirement renseigné, initialement.
+	 * @param PATTERN
+	 * @see RegexWrapper#RegexWrapper(String, int)
+	 */
+	public RegexWrapper(final String PATTERN) {
+		new RegexWrapper(PATTERN, 0);
+	}
+
+	/**
+	 * 
+	 * @return La valeur bindée à l'attribut {@code m_regex}.
+	 * @see RegexWrapper#m_regex m_regex
+	 */
 	public Pattern get_m_regex() {
-		// TODO Auto-generated method stub
-		return null;
+		return m_regex;
+	}
+
+	/**
+	 * 
+	 * @return La valeur bindée à l'attribut {@code m_flag}.
+	 * @see RegexWrapper#m_flag m_flag
+	 */
+	public int get_m_flag() {
+		return m_flag;
 	}
 	
 
