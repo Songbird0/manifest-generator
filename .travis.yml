@@ -2,7 +2,4 @@ language: java
 
 sudo: false
 
-script:
-  - echo "## Installation des dépendences qui ne disposent pas de pom.xml."
-  - echo "Maven version:"
-  - mvn -v
+install: ./install-dependencies.sh
