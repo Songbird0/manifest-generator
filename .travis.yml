@@ -1,0 +1,10 @@
+language: java
+
+sudo: true
+
+script:
+  - apt-get update
+  - apt-get install maven3
+  - mvn -v
+  - mvn install:install-file -Dfile=src/main/resources/WyLog_v2.jar -DgroupId=net.wytrem.logging -DartifactId=wylog -Dversion=2.0 -Dpackaging=jar
+  - mvn test
