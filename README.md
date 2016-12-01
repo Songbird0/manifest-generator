@@ -26,7 +26,7 @@ Autrement, ce projet a vu le jour principalement pour me former à maven et ses 
     - Argument `mfp`;
       - Le chemin du manifest. (ou dans lequel il devrait être créé si il n'est pas présent)
     - Argument `jarp`
-      - Répertoire dans lequel se trouve toutes les dépendances du projet..
+      - Répertoire dans lequel se trouve toutes les dépendances du projet.
 - [ ] Création d'un wrapper pour les commandes
   - [ ] Création d'une enum pour l'introspection des types d'arguments.
     - e.g. Root,

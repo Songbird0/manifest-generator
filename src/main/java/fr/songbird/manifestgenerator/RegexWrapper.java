@@ -21,7 +21,16 @@ public final class RegexWrapper {
 	 */
 	private String m_pattern;
 	/**
-	 * Attribut contenant le ou les flags passés en paramètre.
+	 * Attribut contenant la somme du ou des flags passés en paramètre.
+	 * {@code Pattern.CANON_EQ} == 128.
+	 * {@code Pattern.CASE_INSENSITIVE} == 2.
+	 * {@code Pattern.COMMENTS} == 4.
+	 * {@code Pattern.DOTALL} == 32.
+	 * {@code Pattern.LITERAL} == 16.
+	 * {@code Pattern.MULTILINE} == 8.
+	 * {@code Pattern.UNICODE_CASE} == 64.
+	 * {@code Pattern.UNICODE_CHARACTER_CLASS} == 256.
+	 * {@code Pattern.UNIX_LINES} == 1.
 	 * <p>
 	 * Par défaut, la valeur est nulle. (== 0)
 	 */
