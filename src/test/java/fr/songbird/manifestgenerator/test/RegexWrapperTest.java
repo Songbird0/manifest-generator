@@ -33,4 +33,15 @@ public class RegexWrapperTest {
         assertThat("Erreur, la méthode get_m_flag() a renvoyé: " + FLAG_RETURN, FLAG_RETURN, is(0));
 	}
 
+	@Test
+	public void RegexWrapper_flagsum_test()
+	{
+		final int FLAG_SUM = Pattern.MULTILINE;
+		final RegexWrapper RW = new RegexWrapper("^(\\w)+", FLAG_SUM);
+		final int FLAG_RETURN = RW.get_m_flag();
+		assertThat("Erreur, la somme est égale à " 
+		+ FLAG_RETURN 
+		+ " alors qu'elle devrait être égale à " 
+		+ FLAG_SUM + ".", FLAG_RETURN, is(FLAG_SUM));
+	}
 }
