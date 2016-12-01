@@ -3,6 +3,8 @@ package fr.songbird.manifestgenerator.test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+import java.util.regex.Pattern;
+
 import org.junit.Test;
 
 import fr.songbird.manifestgenerator.RegexWrapper;
